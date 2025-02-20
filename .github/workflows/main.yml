@@ -10,9 +10,8 @@ jobs:
 
       - name: 'Update browserstack.yml file'
         run: |
-          BUILD_NAME=Github Actions Build Name
           FILE="browserstack.yml"
-          yq -i '.buildName = '"$BUILD_NAME" "$FILE"
+          yq -i '.buildName = '"Github Actions Build Name"' "$FILE"
 
       - name: 'BrowserStack Environment Setup'  # Invokes the setup-env action
         uses: browserstack/github-actions/setup-env@master
