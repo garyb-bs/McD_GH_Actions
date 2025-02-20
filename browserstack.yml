@@ -33,7 +33,7 @@ platforms:
     deviceName: iPhone 14
   - browserName: chrome
     osVersion: 13.0
-    deviceName: Samsung Galaxy S23 Ultra
+    deviceName: iPhone 16
   - browserName: chrome
     osVersion: 15.0
     deviceName: Google Pixel 9 Pro XL
