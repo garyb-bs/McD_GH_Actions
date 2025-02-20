@@ -1,5 +1,5 @@
 <p float="left">
-  <img src="https://i.imgur.com/GEgGYUB.png" width="600" height="120" title="Code_School_Logo">
+  <img src="https://i.imgur.com/zDqH9Sz.png" width="600" height="120" title="Code_School_Logo">
 </p>
 
 # Code School - Java - TestNG - Lesson 2 - Parallel Testing
