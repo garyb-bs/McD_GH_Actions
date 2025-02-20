@@ -10,7 +10,7 @@ jobs:
 
       - name: 'Update browserstack.yml file'
         run: |
-          BUILD_NAME="Github Actions Build Name"
+          BUILD_NAME=Github Actions Build Name
           FILE="browserstack.yml"
           yq -i '.buildName = '"$BUILD_NAME" "$FILE"
 
