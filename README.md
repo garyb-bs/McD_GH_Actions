@@ -2,11 +2,11 @@
   <img src="https://i.imgur.com/zDqH9Sz.png" width="600" height="120" title="Code_School_Logo">
 </p>
 
-# Code School - Java - TestNG - Lesson 2 - Parallel Testing
+# BrowserStack / McDonalds - Dynamic YML File Update In GitHub Actions
 
 ## Introduction
 
-This example code shows how to run the tests created in the first lesson in parallel using BrowserStack. 
+This example contains a simple TestNG project that is set up with GitHub Actions and updates the browserstack.yml file based on specified parameters. 
 
 ## Necessary Tools
 
@@ -19,7 +19,6 @@ There are a few things that you will need before you can get started.
     * Eclipse - You can download Eclipse for free from [here](https://www.eclipse.org/downloads/).
     * They will both be able to run the code we will create in these sessions. I will be using IntelliJ but I will also try to reference Eclipse where possible.
 * Java JDK - You can download the JDK directly from the Oracle website [here](https://www.oracle.com/java/technologies/downloads/). This will allow you to run Java applications on your machine.
-* ChromeDriver - this is the web driver that will be used to open Chrome and do the test locally. You can download it from [here](https://chromedriver.chromium.org/downloads). Remember to grab the version that matches your installed browser.
 
 ## Installation
 
@@ -30,10 +29,10 @@ To get the project ready to run on your machine, follow the steps below:
 * Copy the following command into the terminal, (remember, you must have [Git](https://git-scm.com/downloads) installed)
 
 ```sh
-git clone https://github.com/BS-Code-School-Templates/Java-Web-TestNG-Lesson-2-Parallel-Testing.git
+git clone https://github.com/garyb-bs/McD_GH_Actions.git
 ```
 * Move into the directory that you just cloned by typing
 ```sh
-cd Java-Web-TestNG-Lesson-2-Parallel-Testing
+cd McD_GH_Actions
 ```
 * To run your test, you can use the Run button in your IDE of choice or right click anywhere in your file and click Run.
