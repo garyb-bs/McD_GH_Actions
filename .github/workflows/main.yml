@@ -1,5 +1,9 @@
 name: 'Java TestNG GitHub Actions Test'
 on: [push, pull_request]
+
+permissions:
+  contents: write
+
 jobs:
   ubuntu-job:
     name: 'BrowserStack Test on Ubuntu'
