@@ -12,6 +12,9 @@ jobs:
         run: |
           FILE="browserstack.yml"
           yq -i '.buildName = "Github Actions Build Name"' "$FILE"
+          git add *
+          git commit -m "Updating YML file for run"
+          git push -u origin main
 
       - name: 'BrowserStack Environment Setup'  # Invokes the setup-env action
         uses: browserstack/github-actions/setup-env@master
