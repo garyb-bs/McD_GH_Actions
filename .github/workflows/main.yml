@@ -5,6 +5,9 @@ jobs:
     name: 'BrowserStack Test on Ubuntu'
     runs-on: ubuntu-latest  # Can be self-hosted runner also
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: 'Update browserstack.yml file'
         run: |
           yq -i '.buildName = '"GitHub Action Build Name" "browserstack.yml"
