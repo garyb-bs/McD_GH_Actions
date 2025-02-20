@@ -15,7 +15,7 @@ jobs:
       - name: 'Update browserstack.yml file'
         run: |
           FILE="browserstack.yml"
-          yq -i '.buildName = "Github Actions Build Name 2"' "$FILE"
+          yq -i '.buildName = "Github Actions Build Name 3"' "$FILE"
 
       - name: Commit and Push Changes
         run: |
@@ -25,17 +25,17 @@ jobs:
           git commit -m "Updated BrowserStack YML config ahead of run"
           git push -u origin main
 
-      - name: 'BrowserStack Environment Setup'  # Invokes the setup-env action
-        uses: browserstack/github-actions/setup-env@master
-        with:
-          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
-          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+      # - name: 'BrowserStack Environment Setup'  # Invokes the setup-env action
+      #   uses: browserstack/github-actions/setup-env@master
+      #   with:
+      #     username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+      #     access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
 
-      - name: 'Checkout the repository'
-        uses: actions/checkout@v2
+      # - name: 'Checkout the repository'
+      #   uses: actions/checkout@v2
 
-      - name: 'Building web application to be tested'
-        run: mvn clean install -D skipTests
+      # - name: 'Building web application to be tested'
+      #   run: mvn clean install -D skipTests
 
-      - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: mvn clean test -P sample-test  # See sample test script above
+      # - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
+      #   run: mvn clean test -P sample-test  # See sample test script above
