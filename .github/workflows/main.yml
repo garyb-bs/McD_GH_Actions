@@ -16,7 +16,8 @@ jobs:
         run: |
           FILE="browserstack.yml"
           yq -i '.buildName = "Github Actions Build Name 3"' "$FILE"
-          yq -i '.platforms[1].deviceName = "iPhone 16"' "$FILE"
+          yq -i '.platforms[0].deviceName = "iPhone 16"' "$FILE"
+          yq -i '.platforms[1].deviceName = "Samsung Galaxy S24"' "$FILE"
 
       - name: Commit and Push Changes
         run: |
