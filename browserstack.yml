@@ -30,10 +30,10 @@ framework: testng
 platforms:
   - browserName: safari
     osVersion: 18
-    deviceName: iPhone 14
+    deviceName: iPhone 16
   - browserName: chrome
     osVersion: 13.0
-    deviceName: iPhone 16
+    deviceName: Samsung Galaxy S24
   - browserName: chrome
     osVersion: 15.0
     deviceName: Google Pixel 9 Pro XL
